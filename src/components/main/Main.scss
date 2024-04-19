@@ -1,0 +1,46 @@
+.repos {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.repos__navigation {
+    margin: 0 auto;
+    max-width: max-content;
+    margin-bottom: 50px;
+}
+
+
+
+.main {
+    max-width: 1237px;
+    margin: 0 auto;
+    h1 {
+        font-size: 48px;
+        font-weight: 700;
+        text-align: center;
+        margin-top: 28px;
+        margin-bottom: 58px;
+    }
+
+    button {
+        border: none;
+    }
+
+    button:hover {
+        cursor: pointer;
+        background-color: #d0cfd3;
+    }
+
+    button:active {
+        background-color: #1F883D;
+    }
+
+    button:disabled {
+        background-color: transparent;
+        svg {
+            stroke: #AFADB5;
+        }
+    }
+}
