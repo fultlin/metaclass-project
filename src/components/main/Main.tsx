@@ -26,6 +26,12 @@ const Main = () => {
     const indexOfFirstRepo = indexOfLastRepo - repoPerPage;
     const currentRepos = result.slice(indexOfFirstRepo, indexOfLastRepo);
 
+    const totalPages = Math.ceil(result.length / repoPerPage);
+    const pageNumbers = [];
+    for (let i = 1; i <= totalPages; i++) {
+        pageNumbers.push(i);
+    }
+
     const nextPage = () => {
         setPage(page + 1);
     };
@@ -45,6 +51,9 @@ const Main = () => {
                     indexOfFirstRepo={indexOfFirstRepo}
                     indexOfLastRepo={indexOfLastRepo}
                     result={result}
+                    page={page}
+                    totalPages={totalPages}
+                    setPage={setPage}
                 />}
             />
             <Route path="/:name" element={<RepoPage />} />
