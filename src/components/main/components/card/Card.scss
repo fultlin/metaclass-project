@@ -28,4 +28,21 @@
         display: block;
         margin-top: 8px;
     }
+
+    .card__raiting-date {
+        color: #AFADB5;
+        font-size: 14px;
+        font-weight: 500;
+        margin-top: 24px;
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+        .raiting {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            gap: 5px;
+            max-width: max-content;
+        }
+    }
 }
