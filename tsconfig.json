@@ -18,15 +18,15 @@
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true
+    "noFallthroughCasesInSwitch": true,
+    "baseUrl": "src",
+      "paths": {
+        "components": ["components/*"],
+        "config": ["config/*"],
+        "styles": ["styles/*"],
+        "utils": ["utils/*"]
+      }
   },
   "include": ["src", "vite.config.ts", "tsconfig.json"],
-  "references": [{ "path": "./tsconfig.node.json" }],
-  "baseUrl": "src",
-    "paths": {
-      "components": ["components/*"],
-      "config": ["config/*"],
-      "styles": ["styles/*"],
-      "utils": ["utils/*"]
-    }
+  "references": [{ "path": "./tsconfig.node.json" }]
 }

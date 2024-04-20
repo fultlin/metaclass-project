@@ -47,7 +47,7 @@ const Main = () => {
                     result={result}
                 />}
             />
-            <Route path="/repo/:name" element={<RepoPage />} />
+            <Route path="/:name" element={<RepoPage />} />
         </Routes>
     );
 };
